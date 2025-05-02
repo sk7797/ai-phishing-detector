@@ -1,15 +1,34 @@
-# AI-Powered Phishing Email Detector 🛡️
+# 🛡 AI-Powered Phishing Email Detector
 
-This project analyzes emails to detect phishing attempts using rule-based filters and AI sentiment analysis via Hugging Face.
+This project detects phishing and spam emails using an **offline rule-based system** and a simple web interface built with **Streamlit**.
 
-## Features
-- Parses email body, subject, links
-- Detects phishing keywords and suspicious links
-- Uses sentiment analysis to classify risky tone
+It parses email content, identifies obfuscated text and suspicious language patterns, and gives a phishing verdict without relying on cloud APIs or machine learning models.
 
-## Setup
-1. Clone repo or copy files
-2. (Optional) Create and activate a virtual environment
-3. Install dependencies:
-4. Add datasets: `phishing_email.csv` and `Enron.csv`
-5. Run:
+---
+
+## 🚀 Features
+
+- ✅ Offline email phishing detection
+- 📥 Accepts `.eml` file uploads or pasted email content
+- 📊 Detects:
+  - Obfuscated spam
+  - Enhancement/medical scams
+  - Financial fraud
+  - Clickbait and phishing phrases
+- ⚡ Fast, lightweight, privacy-respecting
+
+---
+
+## 🛠 Setup & Run Locally
+
+```bash
+git clone https://github.com/sk7797/ai-phishing-detector.git
+cd ai-phishing-detector
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+streamlit run app.py
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE) © Soham Kandhare
